@@ -8,8 +8,8 @@ session = requests.session()
 response = session.get("https://facebook.com")
 
 response = session.post("https://www.facebook.com/login.php?login_attempt=1&lwv=110", data={
-    'email': 'anty994@gmail.com',
-    'pass': 'Kojjotq994'
+    'email': '',
+    'pass': ''
 
 }, allow_redirects=False)
 
