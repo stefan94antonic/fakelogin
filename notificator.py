@@ -28,7 +28,7 @@ if 'c_user' in response.cookies:
 
         if benachrichtung != None:
             os.system("play " + os.path.dirname(os.path.realpath(__file__)) + "/light.mp3 -q")
-            time.sleep(10)
             print("imas poruku")
+            time.sleep(10)
 
         # print(pretty)
