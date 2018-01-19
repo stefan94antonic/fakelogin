@@ -1,4 +1,6 @@
 import requests
+import os
+import time
 from  bs4 import BeautifulSoup
 
 session = requests.session()
@@ -7,9 +9,11 @@ response = session.get("https://facebook.com")
 
 response = session.post("https://www.facebook.com/login.php?login_attempt=1&lwv=110", data={
     'email': 'anty994@gmail.com',
-    'pass': ''
+    'pass': 'Kojjotq994'
 
 }, allow_redirects=False)
+
+
 
 if 'c_user' in response.cookies:
 
@@ -23,7 +27,8 @@ if 'c_user' in response.cookies:
         # print (type(benachrichtung))
 
         if benachrichtung != None:
+            os.system("play " + os.path.dirname(os.path.realpath(__file__)) + "/light.mp3 -q")
+            time.sleep(10)
             print("imas poruku")
-        else:
-            print("nemas")
+
         # print(pretty)
